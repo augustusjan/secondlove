@@ -61,6 +61,10 @@ nav li a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 /* hier begint de css voor de images */
 div img {
   display: block;
