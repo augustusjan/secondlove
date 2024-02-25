@@ -1,0 +1,206 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  color: #000;
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  overflow: auto;
+  height: 100%;
+  overscroll-behavior: none;
+}
+
+/* hier begint de css voor de header */
+header,
+nav {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 13%;
+  background-color: #619A7E;
+  position: fixed;
+}
+
+header {
+  justify-content: center;
+}
+
+/* hier begint de css voor de navs */
+nav {
+  bottom: 0;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav img {
+  width: 60px;
+  height: auto;
+  margin: .2rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li a {
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* hier begint de css voor de images */
+div img {
+  display: block;
+  margin: auto;
+}
+
+header img {
+  width: 110px;
+}
+
+main img {
+  max-width: 145px;
+  height: auto;
+  border-radius: 15px;
+}
+
+main {
+  margin: 26% auto 0;
+  width: 95vw;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+a,
+button {
+  text-transform: lowercase;
+  font-size: 1.3rem;
+  font-family: courier, monospace;
+  letter-spacing: .15rem;
+}
+
+h1,
+h2,
+h3,
+a {
+  color: #fff;
+  text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+    1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: .3rem;
+}
+
+h3 {
+  margin-bottom: .2rem;
+}
+
+p {
+  margin-bottom: .5rem;
+}
+
+/* hier begint de css voor de buttons */
+button {
+  display: block;
+  font-size: 1rem;
+  height: 44px;
+  margin: .5rem;
+  padding: .5rem 1rem;
+  border: #000 2px solid;
+  border-radius: 6px;
+  color: #000;
+  filter: drop-shadow(5px 5px);
+}
+
+section:nth-of-type(odd) button {
+  background-color: #7AA7E0;
+}
+
+section:nth-of-type(even) button,
+.locaties section:nth-of-type(odd) button {
+  background-color: #fff;
+}
+
+/* hier begint de css voor de sections */
+section:not(:first-of-type) p {
+  margin-bottom: .5rem;
+}
+
+section:last-child {
+  margin-bottom: 1rem;
+}
+
+/* oneven op home en verhaal pagina blauw, bij locaties alleen de eerste section */
+section:nth-of-type(odd) h2,
+.locaties h2:first-of-type {
+  color: #7AA7E0;
+}
+
+section {
+  margin-bottom: 2rem;
+  padding: 0 10px;
+}
+
+.locaties section li:not(:first-child) {
+  text-align: right;
+  margin-top: .5rem;
+}
+
+section:nth-of-type(even),
+.locaties section:not(:first-of-type) {
+  background-color: #7AA7E0;
+  border: #7AA7E0 10px solid;
+  border-radius: 18px;
+}
+
+.locaties div:first-of-type {
+  display: flex;
+  align-items: center;
+}
+
+.locaties section div {
+  justify-content: space-between;
+  align-items: center;
+}
+
+div {
+  display: flex;
+}
+
+div p {
+  margin-right: .5rem;
+}
+
+.locaties div {
+  justify-content: start;
+}
+
+/* hier begint de css voor de footer */
+footer {
+  margin-bottom: 24%;
+}
+
+footer p {
+  text-align: center;
+}
